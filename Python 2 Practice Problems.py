@@ -32,3 +32,12 @@ def digit_sum(n):
   for num in str_num:
     total += int(num)
   return total
+
+4. Define a function factorial that takes an integer x as input. Calculate and return the factorial of that number.
+
+def factorial(x):
+  total = 1
+  while x > 1:
+    total *= x
+    x -= 1
+  return total
