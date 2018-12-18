@@ -8,7 +8,6 @@ class Dog:
         self.name = name
         self.age = age
 
-
 # Instantiate the Dog object
 philo = Dog("Philo", 5)
 mikey = Dog("Mikey", 6)
