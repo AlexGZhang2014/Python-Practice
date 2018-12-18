@@ -56,3 +56,12 @@ def is_prime(x):
 
 print is_prime(13)
 print is_prime(10)
+
+6. Define a function called reverse that takes a string textand returns that string in reverse. For example: reverse("abcd") should return "dcba".
+You may not use reversed or [::-1] to help you with this. You may get a string containing special characters (for example, !, @, or #).
+                                                                                                              
+def reverse(text):
+  reversed_string = ""
+  for char in text:
+    reversed_string = char + reversed_string
+  return reversed_string                                                                                                              
