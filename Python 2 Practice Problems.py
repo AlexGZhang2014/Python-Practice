@@ -65,3 +65,17 @@ def reverse(text):
   for char in text:
     reversed_string = char + reversed_string
   return reversed_string                                                                                                              
+
+7. Define a function called anti_vowel that takes one string, text, as input and returns the text with all of the vowels removed.
+For example: anti_vowel("Hey You!") should return "Hy Y!". Don't count Y as a vowel. Make sure to remove lowercase and uppercase vowels.
+                                                                                                              
+def anti_vowel(text):
+  result = ""
+  vowels = "aeiouAEIOU"
+  for letter in text:
+    if letter not in vowels:
+      result += letter
+  return result
+
+print(anti_vowel("Hey You!"))
+print(anti_vowel("Hey look, words!"))
