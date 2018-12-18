@@ -99,3 +99,22 @@ def scrabble_score(word):
   for letter in lower_word:
     total += score[letter]
   return total                                                                                                           
+
+9. Write a function called censor that takes two strings, text and word, as input.
+It should return the text with the word you chose replaced with asterisks.
+
+For example: censor("this hack is wack hack", "hack") should return: "this **** is wack ****"
+                                                                                                              
+Assume your input strings won't contain punctuation or upper case letters.
+The number of asterisks you put should correspond to the number of letters in the censored word.
+                                                                                                              
+def censor(text, word):
+  asterisks = "*" * len(word)
+  text_array = text.split(" ")
+  for index, item in enumerate(text_array):
+    if item == word:
+      text_array.remove(item)
+      text_array.insert(index, asterisks)
+  return " ".join(text_array)
+
+print(censor("this hack is wack hack", "hack"))
