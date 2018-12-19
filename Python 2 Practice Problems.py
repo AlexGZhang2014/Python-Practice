@@ -149,3 +149,13 @@ def product(numbers):
   for num in numbers:
     product *= num
   return product
+
+13. Write a function remove_duplicates that takes in a list and removes elements of the list that are the same.
+For example: remove_duplicates([1, 1, 2, 2]) should return [1, 2].
+
+def remove_duplicates(elements):
+  result = []
+  for elem in elements:
+    if elem not in result:
+      result.append(elem)
+  return result                                                                                                              
