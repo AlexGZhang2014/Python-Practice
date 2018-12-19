@@ -118,3 +118,14 @@ def censor(text, word):
   return " ".join(text_array)
 
 print(censor("this hack is wack hack", "hack"))
+
+10. Define a function called count that has two arguments called sequence and item.
+Return the number of times the item occurs in the list.
+For example: count([1, 2, 1, 1], 1) should return 3 (because 1 appears 3 times in the list).
+                                                                                                              
+def count(sequence, item):
+  count = 0
+  for thing in sequence:
+    if thing == item:
+      count += 1
+  return count
